@@ -242,7 +242,9 @@ LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeFemale::
 	end
 
 LittlerootTown_EventScript_FatMan::
+	speakername LittlerootTown_Text_NameFatMan
 	msgbox LittlerootTown_Text_CanUsePCToStoreItems, MSGBOX_NPC
+	closemessage
 	end
 
 LittlerootTown_EventScript_Boy::
@@ -951,6 +953,9 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "…But please be careful.\n"
 	.string "If anything happens, you can come home.\p"
 	.string "Go on, go get them, honey!$"
+
+LittlerootTown_Text_NameFatMan:
+	.string "FAT MAN$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
 	.string "If you use a PC, you can store items\n"

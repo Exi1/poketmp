@@ -4414,8 +4414,8 @@
     {
       "id": "LAYOUT_INDOOR_GENZOU_ESTATE_SAYORIS_ROOM",
       "name": "IndoorGenzouEstate_SayorisRoom_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 9,
+      "height": 8,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_SayorisRoom",
       "border_filepath": "data/layouts/IndoorGenzouEstate_SayorisRoom/border.bin",

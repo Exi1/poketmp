@@ -1,0 +1,2 @@
+IndoorGenzouEstate_SayorisRoom_MapScripts::
+	.byte 0

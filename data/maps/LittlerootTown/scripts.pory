@@ -243,9 +243,7 @@ LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeFemale::
 	end
 
 LittlerootTown_EventScript_FatMan::
-	speakername LittlerootTown_Text_NameFatMan
-	msgbox LittlerootTown_Text_CanUsePCToStoreItems, MSGBOX_NPC
-	closemessage
+	warpsilent MAP_INDOOR_GENZOU_ESTATE_SAYORIS_ROOM, 7, 5
 	end
 
 LittlerootTown_EventScript_Boy::
@@ -959,9 +957,9 @@ LittlerootTown_Text_NameFatMan:
 	.string "FAT MAN$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
-	.string "If you use a PC, you can store items\n"
-	.string "and POKéMON.\p"
-	.string "The power of science is staggering!$"
+	.string "Tu boda con el General se celebrará\n"
+	.string "cuando la luna esté llena.\p"
+	.string "Nuestra alianza depende de ello.$"
 
 LittlerootTown_Text_BirchSpendsDaysInLab:
 	.string "PROF. BIRCH spends days in his LAB\n"

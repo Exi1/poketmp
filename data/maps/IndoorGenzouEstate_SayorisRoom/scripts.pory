@@ -1,4 +1,24 @@
 raw `
 IndoorGenzouEstate_SayorisRoom_MapScripts::
-	.byte 0
+	map_script MAP_SCRIPT_ON_TRANSITION, IndoorGenzouEstate_SayorisRoom_OnTransition
+    map_script MAP_SCRIPT_ON_FRAME_TABLE, IndoorGenzouEstate_SayorisRoom_OnFrame
+    .byte 0
+
+IndoorGenzouEstate_SayorisRoom_OnTransition:
+    setflag FLAG_SYS_PREVENT_MAP_FADE
+    end
+
+IndoorGenzouEstate_SayorisRoom_OnFrame:
+    map_script_2 VAR_TEMP_0, 0, IndoorGenzouEstate_SayorisRoom_EventScript_SayoriIntro
+    .2byte 0
+
+IndoorGenzouEstate_SayorisRoom_EventScript_SayoriIntro::
+    msgbox IndoorGenzouEstate_SayorisRoom_Text_Sayori, MSGBOX_NPC
+    fadescreen FADE_FROM_BLACK
+    clearflag FLAG_SYS_PREVENT_MAP_FADE
+    setvar VAR_TEMP_0, 1
+    end
+
+IndoorGenzouEstate_SayorisRoom_Text_Sayori:
+    .string "Sayori: holi$"
 `
